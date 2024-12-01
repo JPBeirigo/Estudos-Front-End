@@ -4,13 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tags HTML 5</title>
+    <style>
+        nav ul{
+            display: flex;
+            list-style: none;
+            margin: 0;
+
+        }
+        nav ul li a{
+            padding: 10px 15px;
+            color: blue;
+            text-decoration: none;
+            border-radius: 15px 0;
+        }
+        nav ul li a:hover{
+            color: white;
+            background: blue;
+        }
+
+    </style>
+    
 </head>
 <body>
     <header></header>
 
+        <!-- Dica para otimização de tempo, ao utilizar o comando nav>ul>li*3 o VSCode automaticamente cria uma nav, uma lista não ordenada e 3 elementos de lista possuindo link respectivamente, devidamente indentados -->
+        <nav>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="tel:+5516992929292">Telefone</a></li>
+            </ul>
+        </nav>
+
     <!-- A tag main é uma tag principal, portanto ela não pode ser uma tag filha de uma header, footer, article e etc. Podemos ter apenas um main por página -->
     <main>
         Main
+
+        <section>   Informação principal do site/página usado quando não existe uma tag especifica para este elemento (Por ex: um menu de navegação estaria na tag nav, mas uma lista de resultados estaria na tag section </section>
+        <section></section>
+        <section></section>
+        <section></section>
+
+        <aside> Informações relacionadas, porém não o foco principal </aside>
         <header>Header</header>
 
         <footer>
