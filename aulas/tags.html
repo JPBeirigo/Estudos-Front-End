@@ -22,6 +22,20 @@
             background: blue;
         }
 
+        blockquote{
+            background-color: rgb(241, 241, 241);
+            padding: 15px;
+            margin-left: 0px;
+            border-left: lightgreen solid 5px;
+        }
+
+        article time{
+            font-style: italic;
+        }
+        article q{
+            font-style: italic;
+        }
+
     </style>
     
 </head>
@@ -40,6 +54,35 @@
     <!-- A tag main é uma tag principal, portanto ela não pode ser uma tag filha de uma header, footer, article e etc. Podemos ter apenas um main por página -->
     <main>
         Main
+
+        <!-- Semânticamente, articles indentados um dentro do outro são interpretados como relacionados um ao outro por mecanismos de busca -->
+        <article>
+            <p>Qual o seu prato favorito?</p>
+            <article>
+                <p>Batata frita</p>
+            </article>
+        </article>
+
+        <article>
+            <h1>Descoberta de vida em outro planeta</h1>
+            <p>Artigo publicado em <time pubdate>21/01/2022 19:00</time></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga animi iure aspernatur repellendus aperiam eligendi ex, officia, est provident ipsum labore repellat placeat hic praesentium reiciendis fugit. Nisi, ipsam quas.</p>
+            <p>Estrela gêmea</p> <!-- Exemplo de citação no meio do do artigo-->
+            <blockquote>
+                <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti soluta sequi quis porro repellat incidunt placeat recusandae ex praesentium eligendi dolore molestias, tenetur nihil iure, repellendus beatae dolorem. Maiores?</i>
+            </blockquote>
+
+            <p>Estrela anã</p> <!-- Exemplo de citação de um link externo no meio do do artigo, citando a fonte, fazendo com que ferramentas de busca identifiquem e indexem isto. -->
+            <blockquote cite="http://wikipedia.com">
+                <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti soluta sequi quis porro repellat incidunt placeat recusandae ex praesentium eligendi dolore molestias, tenetur nihil iure, repellendus beatae dolorem. Maiores?</i>
+            </blockquote>
+
+            <!-- A tag q é uma citação que não executa quebra de linha, geralmente sendo utilizada ara uma citação curta -->
+            <p>Estrela vermelha <q cite="http://wikipedia.com">É uma estrela de tamanho consideravelmente maior em relação ao sol</q></p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga animi iure aspernatur repellendus aperiam eligendi ex, officia, est provident ipsum labore repellat placeat hic praesentium reiciendis fugit. Nisi, ipsam quas.</p>
+
+        </article>
 
         <section>   Informação principal do site/página usado quando não existe uma tag especifica para este elemento (Por ex: um menu de navegação estaria na tag nav, mas uma lista de resultados estaria na tag section </section>
         <section></section>
