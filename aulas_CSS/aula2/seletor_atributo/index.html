@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+
+    <style>
+
+        [title= "Netflix"] {
+            color: red;
+        }
+
+        [title= "Spotify"] {
+            color: green;
+        }
+
+        [title= "Prime"] {
+            color: darkblue;
+        }
+
+        /* Ao adicionar ~= a propriedade CSS é aplicada para a palavra exata ou se a palavra existe isolada. No caso de |= ele procura o valor exato ou a palavra seguida de - */
+        [title~="Streaming"] {
+            background: red;
+        }
+
+        /* Utilizando ^= ele procura o prefixo indicado, caso seja $= procura sufixos, caso usemos *= ele procura a palavra em qualquer posição do atributo */
+        [href^="http://"] {
+            background: lightgreen;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <a title="Streaming Netflix" href="https://netflix.com">
+                    Netflix
+                </a>
+            </li>
+            <li>
+                <a title="Streaming Prime" href="https://primevideo.com">
+                    Prime Video
+                </a>
+            </li>
+            <li>
+                <a title="Spotify" href="http://spotify.com/">
+                    Spotify
+
+                </a>
+            </li>
+            <li>
+                <a title="Disney">
+                    Disney Plus
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
