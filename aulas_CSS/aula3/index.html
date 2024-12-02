@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha CSS</title>
+
+    <style>
+
+        p.texto {
+            color: lightblue;
+        }
+
+        .texto, h1, #link-referencia {
+            color: red;
+        }
+
+        h1, [id^="botao"] {
+            background: lightblue
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Agrupamento de Seletors</h1>
+    <p class="texto">Podemos aplicar as mesmas regras CSS para vários seletores diferentes. Para isso, podemos separar os seletores utilizando uma vírgula (,)</p>
+    <div class="texto">Assim, não precisamos ficar copiando e colando os mesmos códigos para todos, nós podemos fazer um só bloco deCSS e reutilizar as mesmas regras!</div>
+
+    <br><br>
+    <a id="link-referencia" href="#">Clique para ver a documentação</a>
+    <br><br>
+    <a id="link-suporte" href="#">Clique entrar em contato</a>
+    <br><br>
+    <a id="botao voltar" href="#">Voltar</a>
+    <br>
+    <button id="botao-fechar">Fechar página</button>
+</body>
+</html>
